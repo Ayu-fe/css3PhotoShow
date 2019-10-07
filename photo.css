@@ -1,0 +1,192 @@
+
+* {
+    padding: 0px;
+    margin: 0px;
+    list-style: none;
+}
+.wrapper,html,body {
+    width: 100%;
+    height: 100%;
+}
+.wrapper {
+    background-color: #000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.wrapper .content {
+    width: 80%;
+    height: 80%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+}
+.wrapper .content .item {
+    height: 100%;
+    width: 16%;
+    border-radius: 20px;
+    overflow: hidden; 
+    transition: width .7s linear, height .7s linear .7s;
+}
+
+.wrapper .content .item .inner {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    
+}
+.wrapper .content .item .inner:hover {
+    cursor: pointer;
+}
+.wrapper .content .item .inner .bg {
+    width: 100%;
+    height: 100%;  
+    border-radius: 20px;
+    background-size: cover;
+    background-position: center;
+    opacity: 0.6;
+    transition: all .4s;
+}
+.wrapper .content .item:hover .inner .bg {
+    opacity: 1;
+}
+.wrapper .content .item:nth-of-type(1) .inner .bg {
+    background-image: url(./image/a.jpg);   
+}
+.wrapper .content .item:nth-of-type(2) .inner .bg {
+    background-image: url(./image/b.jpg);
+}
+.wrapper .content .item:nth-of-type(3) .inner .bg {
+    background-image: url(./image/c.jpg);
+}
+.wrapper .content .item:nth-of-type(4) .inner .bg {
+    background-image: url(./image/d.jpg);
+}
+.wrapper .content .item:nth-of-type(5) .inner .bg {
+    background-image: url(./image/e.jpg);
+}
+.wrapper .content .item:nth-of-type(6) .inner .bg {
+    background-image: url(./image/f.jpg);
+}
+.wrapper .content .item .inner .title  {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.wrapper .content .item .inner .title h2 {
+    font-size: 16px;
+    transition: all .2s linear;
+    color: #fff;
+}
+.wrapper .content .item:hover .inner .title h2 {
+    transform: scale(1.2);
+}
+.wrapper .content .item:nth-of-type(1) .inner {
+    animation: up .6s linear forwards;
+}
+.wrapper .content .item:nth-of-type(2) .inner {
+    animation: up .8s linear forwards;
+}
+.wrapper .content .item:nth-of-type(3) .inner {
+    animation: up 1s linear forwards;
+}
+.wrapper .content .item:nth-of-type(4) .inner {
+    animation: up 1.2s linear forwards;
+}
+.wrapper .content .item:nth-of-type(5) .inner {
+    animation: up 1.4s linear forwards;
+}
+.wrapper .content .item:nth-of-type(6) .inner {
+    animation: up 1.6s linear forwards;
+}
+.wrapper .content .item.active {
+    width: 100%;   
+}
+.wrapper .content .item.active .inner {
+    cursor: initial;
+}
+.wrapper .content .item.active .title {
+    display: none;   
+}
+.wrapper .content .item.active .bg {
+    opacity: 1;
+}
+.activeWrapper .content .item:not(.active) {
+    width: 0%;
+    height: 0%;
+}
+.activeWrapper .content .item{
+    transition: height .7s linear, width .7s linear .7s;
+}
+.wrapper .item .inner .header {
+    position: absolute;
+    width: 100%;
+    height: 30px;
+    left: 0px;
+    top: 30px;
+    opacity: 0;
+    
+}
+.wrapper .item .inner .header .con {
+    margin-left: 30px;
+    color: #fff;
+    font-size: 24px;
+}
+.activeWrapper .item .inner .header {
+    opacity: 1;
+    transition: all .2s linear 1s;
+}
+.item .header .close {
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    right: 30px;
+    top: 0px;
+}
+.item .header .close:after,
+.item .header .close:before {
+    position: absolute;
+    content: "";
+    display: block;
+    width: 30px;
+    height: 4px;
+    top: 50%;
+    background-color: #fff;
+}
+.item .header .close:after {
+    transform: rotateZ(45deg);
+}
+.item .header .close:before {
+    transform: rotateZ(-45deg);
+}
+.item .header .close:hover {
+    cursor: pointer;
+}
+.item .header .close:hover:before {
+    box-shadow: 0px 0px 20px #fff;
+
+}
+.item .header .close:hover:after {
+    box-shadow: 0px 0px 20px #fff;
+    animation: rotate .4s ;
+}
+@keyframes rotate {
+    0%{
+        transform: rotateZ(45deg) ;
+    }
+    100% {
+        transform: rotate(405deg) ;
+    }
+}
+@keyframes up {
+    0%{
+        transform: translateY(100%);
+    }
+    100%{
+        transform: translateY(0);
+    }
+}
+
+
