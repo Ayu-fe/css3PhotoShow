@@ -52,22 +52,22 @@
     opacity: 1;
 }
 .wrapper .content .item:nth-of-type(1) .inner .bg {
-    background-image: url(./image/a.jpg);   
+    background-image: url(image/a.jpg);
 }
 .wrapper .content .item:nth-of-type(2) .inner .bg {
-    background-image: url(./image/b.jpg);
+    background-image: url(image/b.jpg);
 }
 .wrapper .content .item:nth-of-type(3) .inner .bg {
-    background-image: url(./image/c.jpg);
+    background-image: url(image/c.jpg);
 }
 .wrapper .content .item:nth-of-type(4) .inner .bg {
-    background-image: url(./image/d.jpg);
+    background-image: url(image/d.jpg);
 }
 .wrapper .content .item:nth-of-type(5) .inner .bg {
-    background-image: url(./image/e.jpg);
+    background-image: url(image/e.jpg);
 }
 .wrapper .content .item:nth-of-type(6) .inner .bg {
-    background-image: url(./image/f.jpg);
+    background-image: url(image/f.jpg);
 }
 .wrapper .content .item .inner .title  {
     position: absolute;

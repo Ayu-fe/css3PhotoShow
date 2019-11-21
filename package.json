@@ -1,0 +1,23 @@
+{
+  "name": "css3PhotoShow",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/1979474549/css3PhotoShow.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/1979474549/css3PhotoShow/issues"
+  },
+  "homepage": "https://github.com/1979474549/css3PhotoShow#readme",
+  "dependencies": {
+    "express": "^4.17.1"
+  }
+}
